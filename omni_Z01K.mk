@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := whyred
+PRODUCT_RELEASE_NAME := Z01K
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,7 +23,7 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/xiaomi/whyred/overlay
+DEVICE_PACKAGE_OVERLAYS += device/asus/Z01K/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
 # Inherit from Omni custom product configuration
@@ -31,20 +31,20 @@ $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Inherit from whyred device
-$(call inherit-product, device/xiaomi/whyred/device.mk)
+$(call inherit-product, device/asus/Z01K/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_whyred
-PRODUCT_DEVICE := whyred
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 5 Pro
+PRODUCT_NAME := omni_Z01K
+PRODUCT_DEVICE := Z01K
+PRODUCT_MANUFACTURER := asus
+PRODUCT_BRAND := asus
+PRODUCT_MODEL := ASUS_Z01KD
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
-TARGET_VENDOR_PRODUCT_NAME := whyred
-TARGET_VENDOR_DEVICE_NAME := whyred
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=whyred PRODUCT_NAME=whyred
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+TARGET_VENDOR_PRODUCT_NAME := Z01K
+TARGET_VENDOR_DEVICE_NAME := Z01K
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=Z01K PRODUCT_NAME=Z01K
+PRODUCT_GMS_CLIENTID_BASE := android-Z01K
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="whyred-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
-BUILD_FINGERPRINT := xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
+    PRIVATE_BUILD_DESC="Z01K-user 8.1.0 OPM1.171019.011 V9.5.11.0.OEIMIFA release-keys"
+BUILD_FINGERPRINT := asus/Z01K/Z01K:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
