@@ -15,7 +15,7 @@
 #
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),whyred)
+ifeq ($(TARGET_DEVICE),Z01K)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -82,7 +82,13 @@ $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /persist/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
+TEXFAT_MODULE := $(TARGET_RECOVERY_ROOT_OUT)/sbin/texfat.ko
+$(TEXFAT_MODULE): $(ANDROID_PRODUCT_OUT)/kernel
+	@cp $(KERNEL_MODULES_OUT)/texfat.ko $(TEXFAT_MODULE)
+	$(ANDROID_PRODUCT_OUT)/obj/KERNEL_OBJ/scripts/sign-file sha512 \
+		$(ANDROID_PRODUCT_OUT)/obj/KERNEL_OBJ/certs/signing_key.pem \
+		$(ANDROID_PRODUCT_OUT)/obj/KERNEL_OBJ/certs/signing_key.x509 \
+		$(TEXFAT_MODULE)
+ALL_DEFAULT_INSTALLED_MODULES += $(TEXFAT_MODULE) $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
 
 endif
