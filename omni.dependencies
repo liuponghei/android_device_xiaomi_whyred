@@ -1,12 +1,6 @@
 [
   {
     "remote": "omnirom",
-    "repository": "android_kernel_xiaomi_sdm660",
-    "target_path": "kernel/xiaomi/sdm660",
-    "revision": "android-8.1"
-  },
-  {
-    "remote": "omnirom",
     "repository": "android_packages_apps_FMRadio",
     "target_path": "packages/apps/FMRadio",
     "revision": "android-8.0"
