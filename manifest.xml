@@ -724,7 +724,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mfidoca</name>
+        <name>vendor.asus.hardware.mfidoca</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -733,7 +733,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mlipay</name>
+        <name>vendor.asus.hardware.mlipay</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -742,7 +742,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <name>vendor.asus.hardware.mtdservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -751,7 +751,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.tidaservice</name>
+        <name>vendor.asus.hardware.tidaservice</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
@@ -760,7 +760,7 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.xiaomi.hardware.vsimapp</name>
+        <name>vendor.asus.hardware.vsimapp</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
