@@ -322,6 +322,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-$(call inherit-product, device/xiaomi/whyred/treble.mk)
+$(call inherit-product, device/asus/Z01K/treble.mk)
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
+$(call inherit-product, vendor/asus/Z01K/Z01K-vendor.mk)
