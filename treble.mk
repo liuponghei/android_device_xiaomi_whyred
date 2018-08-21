@@ -125,8 +125,8 @@ PRODUCT_PACKAGES += \
 
 #Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
+    android.hardware.biometrics.fingerprint@2.1-service.asus_sdm660
 
 #Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_sdm660
+    android.hardware.light@2.0-service.asus_sdm660
